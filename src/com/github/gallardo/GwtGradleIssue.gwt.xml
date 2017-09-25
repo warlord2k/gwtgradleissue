@@ -26,6 +26,8 @@
   <source path='client'/>
   <source path='shared'/>
 
+  <super-source path='super_src' />
+
   <!-- allow Super Dev Mode -->
   <add-linker name="xsiframe"/>
 </module>
