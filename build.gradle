@@ -1,0 +1,28 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.gwt:gwt-user:2.8.1'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+            exclude 'com/github/gallardo/super_src/**/*'
+        }
+    }
+    mainSuperSrc {
+        java {
+            srcDirs = ['src/com/github/gallardo/super_src']
+        }
+    }
+    test {
+        java {
+            srcDirs = ['test']
+        }
+    }
+}
